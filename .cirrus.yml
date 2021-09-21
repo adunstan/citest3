@@ -1,0 +1,6 @@
+task:
+  name: Windows
+  windows_container:
+    dockerfile: ci/Dockerfile
+  build_script:
+      - ps: echo \$Env:PATH
