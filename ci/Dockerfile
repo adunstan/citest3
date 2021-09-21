@@ -7,4 +7,4 @@ FROM cirrusci/windowsservercore:2019
 
 SHELL ["powershell", "-NoLogo", "-NoProfile", "-Command"]
 
-RUN setx PATH "c:\foo;\$Env:PATH" /m
+RUN setx PATH "c:\foo;$Env:PATH" /m
